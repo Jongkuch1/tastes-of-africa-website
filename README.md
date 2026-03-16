@@ -123,7 +123,7 @@ Tastes-of-Africa/
 ├── recipe-isombe.html      # Isombe (Central Africa)
 │
 ├── styles.css              # All styles (global, components, dark mode, responsive)
-└── script.js               # All JavaScript (5 features, see below)
+└── script.js               # All JavaScript (7 features, see below)
 ```
 
 ---
