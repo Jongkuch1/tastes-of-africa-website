@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bunny Chow – Tastes of Africa</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <header>
+    <nav>
+      <span class="logo">🌍 Tastes of Africa</span>
+      <button class="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="recipes.html" class="active">Recipes</a></li>
+        <li><a href="regions.html">Regions</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <button type="button" class="theme-toggle" id="theme-toggle" aria-label="Toggle dark/light mode" title="Toggle dark/light mode">🌙</button>
+    </nav>
+  </header>
+
+  <div class="recipe-hero">
+    <h1>Bunny Chow</h1>
+    <p>Durban's most iconic street food — a hollowed-out loaf of white bread packed with rich, fragrant curry. Born in South Africa's Indian community, loved by everyone.</p>
+  </div>
+
+  <div class="recipe-layout">
+
+    <div class="recipe-main">
+      <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=900" alt="Bunny Chow — a bread loaf filled with curry" />
+
+      <p class="recipe-intro">Bunny Chow originated in Durban among the <mark>Indian-South African</mark> community in the 1940s. Workers needed a portable, affordable meal — and the hollowed bread loaf was the perfect edible container. Today it's a national treasure, served with the scooped-out bread "virgin" on the side for dipping.</p>
+
+      <details open>
+        <summary>Ingredients</summary>
+        <ul class="ingredients-list">
+          <li><span data-amount="1" data-unit="">1</span> unsliced white bread loaf</li>
+          <li><span data-amount="600" data-unit="g">600 g</span> chicken thighs or lamb, cubed</li>
+          <li><span data-amount="2" data-unit="">2</span> large onions, finely chopped</li>
+          <li><span data-amount="3" data-unit="">3</span> garlic cloves, minced</li>
+          <li><span data-amount="1" data-unit="tbsp">1 tbsp</span> fresh ginger, grated</li>
+          <li><span data-amount="2" data-unit="">2</span> tomatoes, chopped</li>
+          <li><span data-amount="2" data-unit="tbsp">2 tbsp</span> <mark>Durban curry powder</mark></li>
+          <li><span data-amount="1" data-unit="tsp">1 tsp</span> <mark>turmeric</mark></li>
+          <li><span data-amount="1" data-unit="tsp">1 tsp</span> <mark>cumin seeds</mark></li>
+          <li><span data-amount="2" data-unit="">2</span> potatoes, cubed</li>
+          <li><span data-amount="3" data-unit="tbsp">3 tbsp</span> vegetable oil</li>
+          <li>Salt and fresh coriander to taste</li>
+        </ul>
+      </details>
+
+      <details>
+        <summary>Cooking Instructions</summary>
+        <ol class="recipe-steps">
+          <li>Heat oil in a heavy pot. Fry cumin seeds for 30 seconds until fragrant.</li>
+          <li>Add onions and cook on medium heat for 10 minutes until golden brown.</li>
+          <li>Add garlic and ginger, cook 2 minutes. Add curry powder and turmeric, stir for 1 minute.</li>
+          <li>Add tomatoes and cook until they break down into a thick paste, about 8 minutes.</li>
+          <li>Add meat and coat well in the masala. Brown for 5 minutes.</li>
+          <li>Add potatoes and enough water to just cover. Simmer covered for 35–40 minutes until meat is tender and sauce is thick.</li>
+          <li>Cut the bread loaf into quarters (or halves for a full "quarter bunny"). Hollow out the centre, leaving a thick bread shell.</li>
+          <li>Fill generously with curry. Place the scooped bread on top. Serve immediately.</li>
+        </ol>
+      </details>
+
+      <details>
+        <summary>Cultural Background</summary>
+        <p>The name "Bunny Chow" has nothing to do with rabbits — "bunny" is believed to derive from "bania", a term for the Indian merchant caste. The dish was created out of necessity during apartheid, when Indian South Africans were barred from entering many restaurants and needed a takeaway meal that required no cutlery. Today it's a symbol of Durban's multicultural identity and <mark>Indian-South African</mark> culinary heritage.</p>
+      </details>
+
+      <h3 class="recipe-video-title">Video Tutorial</h3>
+      <div class="video-wrap">
+        <iframe
+          src="https://www.youtube.com/embed/9Ld1YKqBFgk"
+          title="How to Make Bunny Chow"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen>
+        </iframe>
+      </div>
+    </div>
+
+    <aside class="recipe-sidebar">
+
+      <div class="sidebar-box">
+        <h3>⚖️ Ingredient Scaler</h3>
+        <div class="scaler">
+          <label for="scale-range">Servings:</label>
+          <input type="range" id="scale-range" min="0.5" max="4" step="0.5" value="1" />
+          <span id="scale-display">1x</span>
+        </div>
+        <p class="scaler-note">Adjust the slider to scale ingredient amounts.</p>
+      </div>
+
+      <div class="sidebar-box">
+        <h3>❤️ Save Recipe</h3>
+        <button class="fav-btn recipe-favorite-btn" data-id="bunny">🤍 Add to Favorites</button>
+      </div>
+
+      <div class="sidebar-box">
+        <h3>📊 Nutrition (per serving)</h3>
+        <table class="nutrition-table">
+          <thead>
+            <tr><th>Nutrient</th><th>Amount</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Calories</td><td>580 kcal</td></tr>
+            <tr><td>Carbohydrates</td><td>72 g</td></tr>
+            <tr><td>Protein</td><td>32 g</td></tr>
+            <tr><td>Fat</td><td>16 g</td></tr>
+            <tr><td>Fibre</td><td>5 g</td></tr>
+            <tr><td>Sodium</td><td>540 mg</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="sidebar-box">
+        <h3>🗺️ Country of Origin</h3>
+        <div class="map-wrap">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3461.0!2d31.0218!3d-29.8587!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1ef7aa0000000001%3A0x0!2sDurban%2C%20South%20Africa!5e0!3m2!1sen!2s!4v1"
+            title="Durban, South Africa on map"
+            allowfullscreen
+            loading="lazy">
+          </iframe>
+        </div>
+      </div>
+
+    </aside>
+  </div>
+
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-col">
+        <h4>🌍 Tastes of Africa</h4>
+        <p class="footer-note">Celebrating the rich culinary heritage of the African continent.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="recipes.html">Recipes</a></li>
+          <li><a href="regions.html">Regions</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Newsletter</h4>
+        <form class="newsletter-form" id="newsletter-form">
+          <input type="email" placeholder="your@email.com" required aria-label="Email for newsletter" />
+          <button type="submit">Join</button>
+        </form>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2025 Tastes of Africa. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

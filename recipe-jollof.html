@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jollof Rice – Tastes of Africa</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <header>
+    <nav>
+      <span class="logo">🌍 Tastes of Africa</span>
+      <button class="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="recipes.html" class="active">Recipes</a></li>
+        <li><a href="regions.html">Regions</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <button type="button" class="theme-toggle" id="theme-toggle" aria-label="Toggle dark/light mode" title="Toggle dark/light mode">🌙</button>
+    </nav>
+  </header>
+
+  <div class="recipe-hero">
+    <h1>Jollof Rice</h1>
+    <p>West Africa's most beloved one-pot rice dish — smoky, rich, and deeply satisfying. A staple at every celebration from Lagos to Accra.</p>
+  </div>
+
+  <div class="recipe-layout">
+
+    <!-- Main Content -->
+    <div class="recipe-main">
+      <img src="https://images.unsplash.com/photo-1604329760661-e71dc83f8f26?w=900" alt="A bowl of Jollof Rice garnished with fried plantain" />
+
+      <p class="recipe-intro">Jollof Rice is more than a dish — it's a cultural institution. Originating from the Wolof people of Senegal, it has evolved into countless regional variations across West Africa. The <mark>smoky bottom crust</mark> (called "party jollof") is considered the ultimate prize.</p>
+
+      <details open>
+        <summary>Ingredients</summary>
+        <ul class="ingredients-list">
+          <li><span data-amount="2" data-unit="cups">2 cups</span> long-grain parboiled rice</li>
+          <li><span data-amount="400" data-unit="g">400 g</span> canned crushed tomatoes</li>
+          <li><span data-amount="2" data-unit="">2</span> red bell peppers, blended</li>
+          <li><span data-amount="2" data-unit="">2</span> scotch bonnet peppers (adjust to taste)</li>
+          <li><span data-amount="1" data-unit="">1</span> large onion, divided</li>
+          <li><span data-amount="3" data-unit="tbsp">3 tbsp</span> tomato paste</li>
+          <li><span data-amount="4" data-unit="tbsp">4 tbsp</span> vegetable oil</li>
+          <li><span data-amount="2" data-unit="cups">2 cups</span> chicken or vegetable stock</li>
+          <li>Salt, <mark>curry powder</mark>, <mark>thyme</mark>, bay leaves to taste</li>
+        </ul>
+      </details>
+
+      <details>
+        <summary>Cooking Instructions</summary>
+        <ol class="recipe-steps">
+          <li>Blend tomatoes, red peppers, scotch bonnet, and half the onion into a smooth purée.</li>
+          <li>Heat oil in a heavy-bottomed pot. Fry the remaining sliced onion until golden.</li>
+          <li>Add tomato paste and fry for 2 minutes, then pour in the blended pepper mix.</li>
+          <li>Cook the tomato base on medium heat for 20–25 minutes, stirring often, until the oil floats to the top.</li>
+          <li>Season with salt, curry powder, thyme, and bay leaves. Add stock and bring to a boil.</li>
+          <li>Wash rice and add to the pot. Stir, cover tightly with foil then the lid.</li>
+          <li>Cook on low heat for 30 minutes. Check and stir from the bottom. Cook another 10 minutes for the smoky crust.</li>
+          <li>Serve with fried plantain, coleslaw, or grilled chicken.</li>
+        </ol>
+      </details>
+
+      <details>
+        <summary>Cultural Background</summary>
+        <p>The "Jollof Wars" between Nigeria and Ghana are a beloved cultural debate — each country claims the superior version. Nigerian Jollof is known for its smoky depth, while Ghanaian Jollof often uses basmati rice and a slightly different spice profile. Senegalese <mark>Thiéboudienne</mark> is considered the original ancestor of all Jollof dishes.</p>
+      </details>
+
+      <!-- YouTube Tutorial -->
+      <h3 class="recipe-video-title">Video Tutorial</h3>
+      <div class="video-wrap">
+        <iframe
+          src="https://www.youtube.com/embed/IXv6UoJnLMI"
+          title="How to Make Jollof Rice"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen>
+        </iframe>
+      </div>
+    </div>
+
+    <!-- Sidebar -->
+    <aside class="recipe-sidebar">
+
+      <div class="sidebar-box">
+        <h3>⚖️ Ingredient Scaler</h3>
+        <div class="scaler">
+          <label for="scale-range">Servings:</label>
+          <input type="range" id="scale-range" min="0.5" max="4" step="0.5" value="1" />
+          <span id="scale-display">1x</span>
+        </div>
+        <p class="scaler-note">Adjust the slider to scale ingredient amounts.</p>
+      </div>
+
+      <div class="sidebar-box">
+        <h3>❤️ Save Recipe</h3>
+        <button class="fav-btn recipe-favorite-btn" data-id="jollof">🤍 Add to Favorites</button>
+      </div>
+
+      <div class="sidebar-box">
+        <h3>📊 Nutrition (per serving)</h3>
+        <table class="nutrition-table">
+          <thead>
+            <tr><th>Nutrient</th><th>Amount</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Calories</td><td>420 kcal</td></tr>
+            <tr><td>Carbohydrates</td><td>68 g</td></tr>
+            <tr><td>Protein</td><td>9 g</td></tr>
+            <tr><td>Fat</td><td>12 g</td></tr>
+            <tr><td>Fibre</td><td>3 g</td></tr>
+            <tr><td>Sodium</td><td>480 mg</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="sidebar-box">
+        <h3>🗺️ Country of Origin</h3>
+        <div class="map-wrap">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15955.27!2d3.3792!3d6.5244!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103b8b2ae68280c1%3A0xdc9e87a367c3d9cb!2sLagos%2C%20Nigeria!5e0!3m2!1sen!2s!4v1"
+            title="Lagos, Nigeria on map"
+            allowfullscreen
+            loading="lazy">
+          </iframe>
+        </div>
+      </div>
+
+    </aside>
+  </div>
+
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-col">
+        <h4>🌍 Tastes of Africa</h4>
+        <p class="footer-note">Celebrating the rich culinary heritage of the African continent.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="recipes.html">Recipes</a></li>
+          <li><a href="regions.html">Regions</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Newsletter</h4>
+        <form class="newsletter-form" id="newsletter-form">
+          <input type="email" placeholder="your@email.com" required aria-label="Email for newsletter" />
+          <button type="submit">Join</button>
+        </form>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2025 Tastes of Africa. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

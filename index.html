@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tastes of Africa – Home</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ===== Header ===== -->
+  <header>
+    <nav>
+      <span class="logo">🌍 Tastes of Africa</span>
+      <button class="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links">
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="recipes.html">Recipes</a></li>
+        <li><a href="regions.html">Regions</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <button type="button" class="theme-toggle" id="theme-toggle" aria-label="Toggle dark/light mode" title="Toggle dark/light mode">🌙</button>
+    </nav>
+  </header>
+
+  <!-- ===== Hero ===== -->
+  <section class="hero">
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <h1>Discover the Flavours of Africa</h1>
+      <p>A culinary journey through the continent's most vibrant, diverse, and soulful food traditions.</p>
+      <a href="recipes.html" class="btn btn-primary">Explore Recipes</a>
+
+      <div class="hero-video">
+        <div class="video-wrap">
+          <iframe
+            src="https://www.youtube.com/embed/p1nZS9dylRw"
+            title="Discover the Flavours of Africa"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen>
+          </iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Featured Dishes ===== -->
+  <section class="bg-warm">
+    <div class="section-inner">
+      <h2 class="section-title">Featured Dishes</h2>
+      <div class="divider"></div>
+      <p class="section-subtitle">Signature plates that tell the story of a continent</p>
+
+      <div class="cards-grid">
+
+        <div class="card recipe-card" data-region="west-africa" id="card-jollof">
+          <figure>
+            <img src="https://images.unsplash.com/photo-1604329760661-e71dc83f8f26?w=600" alt="Jollof Rice served in a bowl" />
+            <figcaption class="sr-only">Jollof Rice – West Africa</figcaption>
+          </figure>
+          <div class="card-body">
+            <span class="card-tag">West Africa</span>
+            <h3>Jollof Rice</h3>
+            <p>The beloved one-pot rice dish cooked in a rich tomato and pepper sauce, a staple across Ghana, Nigeria, and Senegal.</p>
+            <a href="recipe-jollof.html" class="btn btn-primary">View Recipe</a>
+            <button class="fav-btn" data-id="jollof">🤍 Favorite</button>
+          </div>
+        </div>
+
+        <div class="card recipe-card" data-region="north-africa" id="card-tagine">
+          <figure>
+            <img src="https://images.unsplash.com/photo-1547592180-85f173990554?w=600" alt="Moroccan Tagine in a clay pot" />
+            <figcaption class="sr-only">Tagine – North Africa</figcaption>
+          </figure>
+          <div class="card-body">
+            <span class="card-tag">North Africa</span>
+            <h3>Moroccan Tagine</h3>
+            <p>A slow-cooked stew of tender meat, vegetables, and aromatic spices like <mark>cumin</mark>, <mark>saffron</mark>, and cinnamon.</p>
+            <a href="recipe-tagine.html" class="btn btn-primary">View Recipe</a>
+            <button class="fav-btn" data-id="tagine">🤍 Favorite</button>
+          </div>
+        </div>
+
+        <div class="card recipe-card" data-region="east-africa" id="card-injera">
+          <figure>
+            <img src="https://images.unsplash.com/photo-1567620905732-2d1ec7ab7445?w=600" alt="Injera flatbread with stews" />
+            <figcaption class="sr-only">Injera – East Africa</figcaption>
+          </figure>
+          <div class="card-body">
+            <span class="card-tag">East Africa</span>
+            <h3>Injera &amp; Wot</h3>
+            <p>Ethiopia's iconic sourdough flatbread served with rich, spiced stews. The <mark>teff</mark> grain gives it a unique tangy flavour.</p>
+            <a href="recipe-injera.html" class="btn btn-primary">View Recipe</a>
+            <button class="fav-btn" data-id="injera">🤍 Favorite</button>
+          </div>
+        </div>
+
+        <div class="card recipe-card" data-region="south-africa" id="card-bunny">
+          <figure>
+            <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=600" alt="Bunny Chow bread bowl" />
+            <figcaption class="sr-only">Bunny Chow – South Africa</figcaption>
+          </figure>
+          <div class="card-body">
+            <span class="card-tag">South Africa</span>
+            <h3>Bunny Chow</h3>
+            <p>A hollowed-out loaf of bread filled with spicy curry — a street food icon from Durban with deep <mark>Indian-South African</mark> roots.</p>
+            <a href="recipe-bunny-chow.html" class="btn btn-primary">View Recipe</a>
+            <button class="fav-btn" data-id="bunny">🤍 Favorite</button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Explore by Region ===== -->
+  <section class="bg-light">
+    <div class="section-inner">
+      <h2 class="section-title">Explore by Region</h2>
+      <div class="divider"></div>
+      <p class="section-subtitle">Each region has its own story, spices, and soul</p>
+
+      <div class="regions-grid">
+
+        <div class="region-card">
+          <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=800" alt="West African cuisine spread" />
+          <div class="region-card-overlay">
+            <h3>West Africa</h3>
+            <a href="regions.html#west">Explore →</a>
+          </div>
+        </div>
+
+        <div class="region-card">
+          <img src="https://images.unsplash.com/photo-1541518763669-27fef04b14ea?w=800" alt="North African spices and dishes" />
+          <div class="region-card-overlay">
+            <h3>North Africa</h3>
+            <a href="regions.html#north">Explore →</a>
+          </div>
+        </div>
+
+        <div class="region-card">
+          <img src="https://images.unsplash.com/photo-1567620905732-2d1ec7ab7445?w=800" alt="East African food market" />
+          <div class="region-card-overlay">
+            <h3>East Africa</h3>
+            <a href="regions.html#east">Explore →</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Latest Food Trends ===== -->
+  <section class="bg-warm">
+    <div class="section-inner">
+      <h2 class="section-title">Latest Food Trends</h2>
+      <div class="divider"></div>
+      <p class="section-subtitle">African cuisine is taking the global stage</p>
+
+      <div class="articles-grid">
+
+        <article class="news-card">
+          <time datetime="2025-02-10">February 10, 2025</time>
+          <h3>African Cuisine Goes Global</h3>
+          <p>Restaurants featuring <mark>West African</mark> flavours are opening in New York, London, and Paris, bringing dishes like Jollof Rice and Egusi Soup to international diners.</p>
+        </article>
+
+        <article class="news-card">
+          <time datetime="2025-01-22">January 22, 2025</time>
+          <h3>The Rise of Teff &amp; Ancient Grains</h3>
+          <p><mark>Teff</mark>, the tiny grain behind Ethiopia's injera, is gaining popularity as a gluten-free superfood packed with iron and protein.</p>
+        </article>
+
+        <article class="news-card">
+          <time datetime="2025-03-01">March 1, 2025</time>
+          <h3>Moroccan Spice Routes Revived</h3>
+          <p>Chefs worldwide are rediscovering the depth of <mark>ras el hanout</mark> and <mark>harissa</mark>, incorporating North African spice blends into modern fusion menus.</p>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Footer ===== -->
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-col">
+        <h4>🌍 Tastes of Africa</h4>
+        <p style="font-size:0.9rem;">Celebrating the rich culinary heritage of the African continent.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="recipes.html">Recipes</a></li>
+          <li><a href="regions.html">Regions</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Newsletter</h4>
+        <p style="font-size:0.9rem;margin-bottom:0.5rem;">Get weekly recipes in your inbox.</p>
+        <form class="newsletter-form" id="newsletter-form">
+          <input type="email" placeholder="your@email.com" required aria-label="Email for newsletter" />
+          <button type="submit">Join</button>
+        </form>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2025 Tastes of Africa. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

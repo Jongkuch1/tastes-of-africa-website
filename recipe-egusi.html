@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Egusi Soup – Tastes of Africa</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <header>
+    <nav>
+      <span class="logo">🌍 Tastes of Africa</span>
+      <button class="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="recipes.html" class="active">Recipes</a></li>
+        <li><a href="regions.html">Regions</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <button type="button" class="theme-toggle" id="theme-toggle" aria-label="Toggle dark/light mode" title="Toggle dark/light mode">🌙</button>
+    </nav>
+  </header>
+
+  <div class="recipe-hero">
+    <h1>Egusi Soup</h1>
+    <p>Nigeria's most celebrated soup — a thick, hearty stew made from ground melon seeds, leafy greens, and assorted meats, served with fufu or pounded yam.</p>
+  </div>
+
+  <div class="recipe-layout">
+
+    <div class="recipe-main">
+      <img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=900" alt="Egusi Soup in a pot with leafy greens" />
+
+      <p class="recipe-intro">Egusi soup is made from the ground seeds of <mark>egusi melon</mark> (Citrullus lanatus), which thicken the soup and give it a rich, nutty flavour. It is one of the most widely consumed soups in West and Central Africa, with each region and family having its own cherished variation.</p>
+
+      <details open>
+        <summary>Ingredients</summary>
+        <ul class="ingredients-list">
+          <li><span data-amount="2" data-unit="cups">2 cups</span> <mark>ground egusi (melon seeds)</mark></li>
+          <li><span data-amount="500" data-unit="g">500 g</span> assorted meat (beef, tripe, or goat)</li>
+          <li><span data-amount="200" data-unit="g">200 g</span> stockfish or smoked fish</li>
+          <li><span data-amount="4" data-unit="tbsp">4 tbsp</span> <mark>palm oil</mark></li>
+          <li><span data-amount="2" data-unit="cups">2 cups</span> bitter leaf or spinach, chopped</li>
+          <li><span data-amount="2" data-unit="">2</span> scotch bonnet peppers, blended</li>
+          <li><span data-amount="2" data-unit="">2</span> tomatoes, blended</li>
+          <li><span data-amount="1" data-unit="">1</span> onion, divided</li>
+          <li><span data-amount="2" data-unit="tbsp">2 tbsp</span> <mark>ground crayfish</mark></li>
+          <li>Stock cubes and salt to taste</li>
+        </ul>
+      </details>
+
+      <details>
+        <summary>Cooking Instructions</summary>
+        <ol class="recipe-steps">
+          <li>Season and cook assorted meat with half the onion, stock cubes, and salt until tender. Reserve the stock.</li>
+          <li>Heat palm oil in a large pot. Fry the remaining sliced onion for 3 minutes.</li>
+          <li>Add blended pepper and tomato mix. Fry on medium heat for 15 minutes, stirring, until the oil rises to the top.</li>
+          <li>Mix ground egusi with a little water to form a thick paste. Drop spoonfuls into the pot.</li>
+          <li>Do not stir — let the egusi cook undisturbed for 5 minutes to form clumps, then gently fold in.</li>
+          <li>Add cooked meat, stockfish, crayfish, and enough meat stock to reach desired consistency.</li>
+          <li>Simmer for 15 minutes. Add bitter leaf or spinach in the last 5 minutes.</li>
+          <li>Serve hot with fufu, pounded yam, or eba.</li>
+        </ol>
+      </details>
+
+      <details>
+        <summary>Cultural Background</summary>
+        <p>Egusi soup holds deep cultural significance across Nigeria, Ghana, Cameroon, and beyond. In Yoruba culture it is called <mark>efo elegusi</mark>, while the Igbo call it <mark>ofe egusi</mark>. It is a dish of celebration and abundance — always present at weddings, naming ceremonies, and festivals. The combination of <mark>palm oil</mark>, <mark>crayfish</mark>, and bitter leaf creates a flavour profile that is unmistakably West African.</p>
+      </details>
+
+      <h3 class="recipe-video-title">Video Tutorial</h3>
+      <div class="video-wrap">
+        <iframe
+          src="https://www.youtube.com/embed/hpig_2WnhEM"
+          title="How to Make Egusi Soup"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen>
+        </iframe>
+      </div>
+    </div>
+
+    <aside class="recipe-sidebar">
+
+      <div class="sidebar-box">
+        <h3>⚖️ Ingredient Scaler</h3>
+        <div class="scaler">
+          <label for="scale-range">Servings:</label>
+          <input type="range" id="scale-range" min="0.5" max="4" step="0.5" value="1" />
+          <span id="scale-display">1x</span>
+        </div>
+        <p class="scaler-note">Adjust the slider to scale ingredient amounts.</p>
+      </div>
+
+      <div class="sidebar-box">
+        <h3>❤️ Save Recipe</h3>
+        <button class="fav-btn recipe-favorite-btn" data-id="egusi">🤍 Add to Favorites</button>
+      </div>
+
+      <div class="sidebar-box">
+        <h3>📊 Nutrition (per serving)</h3>
+        <table class="nutrition-table">
+          <thead>
+            <tr><th>Nutrient</th><th>Amount</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Calories</td><td>490 kcal</td></tr>
+            <tr><td>Carbohydrates</td><td>18 g</td></tr>
+            <tr><td>Protein</td><td>34 g</td></tr>
+            <tr><td>Fat</td><td>32 g</td></tr>
+            <tr><td>Fibre</td><td>5 g</td></tr>
+            <tr><td>Sodium</td><td>510 mg</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="sidebar-box">
+        <h3>🗺️ Country of Origin</h3>
+        <div class="map-wrap">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15955.27!2d3.3792!3d6.5244!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103b8b2ae68280c1%3A0xdc9e87a367c3d9cb!2sLagos%2C%20Nigeria!5e0!3m2!1sen!2s!4v1"
+            title="Lagos, Nigeria on map"
+            allowfullscreen
+            loading="lazy">
+          </iframe>
+        </div>
+      </div>
+
+    </aside>
+  </div>
+
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-col">
+        <h4>🌍 Tastes of Africa</h4>
+        <p class="footer-note">Celebrating the rich culinary heritage of the African continent.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="recipes.html">Recipes</a></li>
+          <li><a href="regions.html">Regions</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Newsletter</h4>
+        <form class="newsletter-form" id="newsletter-form">
+          <input type="email" placeholder="your@email.com" required aria-label="Email for newsletter" />
+          <button type="submit">Join</button>
+        </form>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2025 Tastes of Africa. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

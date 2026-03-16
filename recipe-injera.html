@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Injera – Tastes of Africa</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <header>
+    <nav>
+      <span class="logo">🌍 Tastes of Africa</span>
+      <button class="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="recipes.html" class="active">Recipes</a></li>
+        <li><a href="regions.html">Regions</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <button type="button" class="theme-toggle" id="theme-toggle" aria-label="Toggle dark/light mode" title="Toggle dark/light mode">🌙</button>
+    </nav>
+  </header>
+
+  <div class="recipe-hero">
+    <h1>Injera &amp; Doro Wot</h1>
+    <p>Ethiopia's ancient sourdough flatbread — the plate, the utensil, and the meal all in one. Served with rich, slow-cooked stews.</p>
+  </div>
+
+  <div class="recipe-layout">
+
+    <div class="recipe-main">
+      <img src="https://images.unsplash.com/photo-1567620905732-2d1ec7ab7445?w=900" alt="Injera flatbread with colourful Ethiopian stews" />
+
+      <p class="recipe-intro">Injera is made from <mark>teff</mark> — a tiny, nutrient-dense grain native to the Ethiopian highlands. The batter ferments for 2–3 days, developing a distinctive sour flavour. It's cooked on a large flat griddle called a <mark>mitad</mark>, creating a spongy, porous surface perfect for scooping up stews.</p>
+
+      <details open>
+        <summary>Injera Ingredients</summary>
+        <ul class="ingredients-list">
+          <li><span data-amount="2" data-unit="cups">2 cups</span> <mark>teff flour</mark></li>
+          <li><span data-amount="2.5" data-unit="cups">2.5 cups</span> water (room temperature)</li>
+          <li><span data-amount="0.5" data-unit="tsp">0.5 tsp</span> salt</li>
+          <li>Starter: 2 tbsp of previous injera batter or active sourdough starter</li>
+        </ul>
+      </details>
+
+      <details>
+        <summary>Doro Wot (Chicken Stew) Ingredients</summary>
+        <ul class="ingredients-list">
+          <li><span data-amount="1" data-unit="kg">1 kg</span> chicken pieces</li>
+          <li><span data-amount="4" data-unit="">4</span> large onions, finely chopped</li>
+          <li><span data-amount="4" data-unit="tbsp">4 tbsp</span> <mark>berbere spice</mark></li>
+          <li><span data-amount="4" data-unit="tbsp">4 tbsp</span> niter kibbeh (spiced clarified butter)</li>
+          <li><span data-amount="4" data-unit="">4</span> hard-boiled eggs, pierced</li>
+          <li><span data-amount="3" data-unit="">3</span> garlic cloves, minced</li>
+          <li><span data-amount="1" data-unit="tsp">1 tsp</span> fresh ginger, grated</li>
+          <li>Salt to taste</li>
+        </ul>
+      </details>
+
+      <details>
+        <summary>Injera Cooking Instructions</summary>
+        <ol class="recipe-steps">
+          <li>Mix teff flour with water and starter. Cover loosely and ferment at room temperature for 2–3 days.</li>
+          <li>When ready, the batter should smell pleasantly sour and have bubbles on the surface.</li>
+          <li>Heat a large non-stick pan or griddle over medium-high heat. Lightly grease.</li>
+          <li>Pour a ladleful of batter in a spiral from the outside in, tilting to spread thinly.</li>
+          <li>Cover and cook for 2–3 minutes until the surface is dry and full of holes. Do not flip.</li>
+          <li>Remove and cool on a clean cloth. Repeat with remaining batter.</li>
+        </ol>
+      </details>
+
+      <details>
+        <summary>Doro Wot Cooking Instructions</summary>
+        <ol class="recipe-steps">
+          <li>Dry-fry onions in a heavy pot for 15 minutes, stirring constantly, until very soft and golden.</li>
+          <li>Add niter kibbeh and berbere. Cook for 5 minutes, stirring.</li>
+          <li>Add garlic and ginger. Cook 2 minutes.</li>
+          <li>Add chicken pieces. Coat well in the sauce. Add a little water if needed.</li>
+          <li>Cover and simmer on low heat for 45 minutes until chicken is very tender.</li>
+          <li>Add hard-boiled eggs in the last 10 minutes. Season with salt.</li>
+          <li>Serve on injera with additional stews like misir wot (red lentils).</li>
+        </ol>
+      </details>
+
+      <details>
+        <summary>Cultural Background</summary>
+        <p>In Ethiopian culture, sharing injera is an act of community and love. The practice of <mark>gursha</mark> — feeding a piece of injera with stew directly into another person's mouth — is a gesture of deep affection and friendship. Injera has been a staple in Ethiopia and Eritrea for over 2,000 years and is central to every meal, ceremony, and celebration.</p>
+      </details>
+
+      <h3 class="recipe-video-title">Video Tutorial</h3>
+      <div class="video-wrap">
+        <iframe
+          src="https://www.youtube.com/embed/Gy9eFMnFBaI"
+          title="How to Make Injera"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen>
+        </iframe>
+      </div>
+    </div>
+
+    <aside class="recipe-sidebar">
+
+      <div class="sidebar-box">
+        <h3>⚖️ Ingredient Scaler</h3>
+        <div class="scaler">
+          <label for="scale-range">Servings:</label>
+          <input type="range" id="scale-range" min="0.5" max="4" step="0.5" value="1" />
+          <span id="scale-display">1x</span>
+        </div>
+        <p class="scaler-note">Adjust the slider to scale ingredient amounts.</p>
+      </div>
+
+      <div class="sidebar-box">
+        <h3>❤️ Save Recipe</h3>
+        <button class="fav-btn recipe-favorite-btn" data-id="injera">🤍 Add to Favorites</button>
+      </div>
+
+      <div class="sidebar-box">
+        <h3>📊 Nutrition (per serving)</h3>
+        <table class="nutrition-table">
+          <thead>
+            <tr><th>Nutrient</th><th>Amount</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Calories</td><td>380 kcal</td></tr>
+            <tr><td>Carbohydrates</td><td>52 g</td></tr>
+            <tr><td>Protein</td><td>22 g</td></tr>
+            <tr><td>Fat</td><td>10 g</td></tr>
+            <tr><td>Fibre</td><td>6 g</td></tr>
+            <tr><td>Iron</td><td>4.2 mg</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="sidebar-box">
+        <h3>🗺️ Country of Origin</h3>
+        <div class="map-wrap">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3940.5!2d38.7578!3d9.0054!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x164b85cef5ab402d%3A0x8467b6b037a24d49!2sAddis%20Ababa%2C%20Ethiopia!5e0!3m2!1sen!2s!4v1"
+            title="Addis Ababa, Ethiopia on map"
+            allowfullscreen
+            loading="lazy">
+          </iframe>
+        </div>
+      </div>
+
+    </aside>
+  </div>
+
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-col">
+        <h4>🌍 Tastes of Africa</h4>
+        <p class="footer-note">Celebrating the rich culinary heritage of the African continent.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="recipes.html">Recipes</a></li>
+          <li><a href="regions.html">Regions</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Newsletter</h4>
+        <form class="newsletter-form" id="newsletter-form">
+          <input type="email" placeholder="your@email.com" required aria-label="Email for newsletter" />
+          <button type="submit">Join</button>
+        </form>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2025 Tastes of Africa. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
